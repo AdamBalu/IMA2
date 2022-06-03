@@ -1,0 +1,132 @@
+\documentclass[8pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={8.25in, 11.6in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\begin{document}
+\begin{tabular}{l|l|c}
+\textbf{Nekonečné a moc.rady~\vline ~pokračovanie~ $\rightarrow$} & Odmoc: $a_n\ge0:\lim\limits_{n\rightarrow\infty}\sqrt[\uproot{5}n]{a_n}=\phi;\phi>1$:D;$\phi<1$:K;$\phi=1$:N; & $\int 1dx=x+C$ \\
+
+$S=\sum\limits_{n=1}^\infty a_n = \lim\limits_{n\rightarrow\infty} s_n$ & Integ:$f(x)$ = nez.,ner.: $f(n)=a_n \sum a_n $K $ \Leftrightarrow \int\limits_1^\infty f(x)dx$ K & $\int adx=ax+C$\\
+
+\textbf{Pre geom. rady: }$s_n=\frac{a_1}{1-q}; q \epsilon (-1,1)$ & Srovn: $\lim\limits_{n\rightarrow\infty} \frac{a_n}{b_n}=p;$ & $\int x^ndx=\frac{x^{n+1}}{n+1}+C$ \\
+
+$NPK: \sum a_n$ konv $\Rightarrow \lim\limits_{n\rightarrow\infty} a_n = 0 $ & $p<\infty: a\sum{b_n}$ konv $\Rightarrow \sum{a_n}$ konv & $\int sinxdx=-cosx+C$\\
+
+$\sum a_n$ konv $\Rightarrow \sum ka_n$ konv, $\sum ka_n = k \sum a_n $ & $p>0: a\sum{b_n}$ div $\Rightarrow \sum{a_n}$ div & $\int cosxdx=sinx+C$\\
+
+$\sum a_n$ a $\sum b_n$ konv $\Rightarrow$ $\sum (a_n+b_n) $ konv & \textbf{Altern. rady:} & $\int \frac{1}{x}dx=ln|x|+C$ \\
+
+a platí $\sum (a_n+b_n)=\sum a_n + \sum b_n$ & Leibniz: $a_n$ je nerast. postupnost kladnych cisel. & $\int e^xdx=e^x+C$ \\
+
+$a_n \leq b_n$: $\sum a_n$ div $\Rightarrow \sum b_n$ div & Rada $\sum\limits_{n=1}^\infty (-1)^n a_n$ K $\Leftrightarrow\lim\limits_{n\rightarrow\infty}a_n=0$;inak D & $\int a^xdx=\frac{a^x}{ln a}+C$\\
+
+$a_n \leq b_n$: $\sum b_n$ konv $\Rightarrow \sum a_n$ konv & \textbf{Absol.konv (AK): } $\sum a_n$ AK $\Leftrightarrow$ konv $\sum |a_n|$; AK $\Rightarrow$ NAK & \\
+\textbf{Kriteria} (K=konverguje, D=diverguje, N=nelze urcit) & Podil krit: Ak $\exists \lim\limits_{n\rightarrow\infty} \arrowvert{\frac{a_{n+1}}{a_n}}\arrowvert{}=\phi;\phi>1:$D;$\phi<1:$AK & \\
+Podil: $a_n\ge 0: \lim\limits_{n\rightarrow \infty} \frac{a_{n+1}}{a_n}=\phi;\phi>1:$D$;\phi<1:$K;$\phi=1:$N & Odmoc krit: Ak $\exists \lim\limits_{n\rightarrow\infty} \sqrt{\arrowvert{{a_n}}\arrowvert{}}=\phi;\phi>1:$D;$\phi<1:$AK & \\
+
+
+\rule{72mm}{0.2pt} & \textbf{Mocninné rady} & \\
+\textbf{Fourierove rady} & $r=\lim\limits_{n\rightarrow\infty}\arrowvert{}\frac{a_n}{a_{n+1}}\arrowvert{}$ \hspace{10mm} $r=\frac{1}{\lim\limits_{n\rightarrow\infty}\sqrt[\leftroot{4} \uproot{2} n]{\arrowvert{}a_n\arrowvert{}}}$& \\
+
+$\omega = \frac{2\pi}{T}$;~~~~~~~~~~~~~$\downarrow$ súčet rady v x, kde je f nespojitá $\downarrow$ & Preložiť výraz s $x^n = 0$ (napr. rada $\frac{(x+2)^n}{3^n}\Rightarrow x+2=0$) & $(arctan)'=\frac{1}{x^2+1}$\\
+
+$a_0 = \frac{2}{T}\int\limits_a^{a+T} f(t)dt$~~; s=$\frac{1}{2}(\lim\limits_{t\rightarrow x^-}\{f(t)\}+\lim\limits_{t\rightarrow x^+}\{f(t)\})$ & Získame $x_0$, od ktorého sme vzdialení r $(x_0-r;x_0+r)$ & $(tan)'=sec^2(x)$  \\
+
+$a_n = \frac{2}{T}\int\limits_a^{a+T} f(t)cos(n\omega t)dt , n = 0,1,2..$ & \underline{kraj.b. - prever konv/div a príp. zahrň do finál. oboru konv} & $(arccos)'=\frac{-1}{\sqrt{1-x^2}}$ \\
+
+$b_n = \frac{2}{T}\int\limits_a^{a+T} f(t)sin(n\omega t)dt , n = 1,2,3..$ & \textbf{Objem telesa:} zadané $0\le z \le \xi$, vypočítaj $\int\int\limits_M \xi~dM$ & $(arcsin)'=\frac{1}{\sqrt{1-x^2}}$ \\
+
+$f(t) \approx \frac{a_0}{2} + \sum\limits_{n=1}^\infty a_n cos(n\omega t) + b_n sin(n\omega t) $ &  & $(ln~x)'=\frac{1}{x}$ \\
+
+f párna $\Rightarrow b_n = 0$ & \\
+
+f nepárna $\Rightarrow a_n = 0$ & \\
+
+$\exists b_{n_1} : b_{n_1} \ne 0 \Rightarrow$
+f nie je párna & \\
+
+$\exists a_{n_2} : a_{n_2} \ne 0 \Rightarrow$
+f nie je nepárna & \\
+
+$\int sin(kx)dx = -\frac{1}{k} cos(kx)$ & \\
+
+$\int cos(kx)dx = \frac{1}{k} sin(kx)$ & \\
+
+sinová r.-obs.len siny(nepár.roz.): & \\
+$\sum\limits_{n=1}^\infty b_n sin(n\omega t)$ & \\
+cosinová r.-obs.len cosiny(pár.roz.): & \\
+$\frac{a_0}{2}  +\sum\limits_{n=1}^\infty a_n cos(n\omega t)$ & & \\
+
+\hline
+\textbf{Polárne súradnice} &  & \textbf{Parcialne zlomky}\\
+1. Určiť interval r, $\varphi$ 2.Integrál $\int_{\varphi_0}^{\varphi_1}\int_{r_0}^{r_1}f(x,y)J~drd\varphi$ & & $\frac{p(x)+q}{(x-a)(x-b)}=\frac{A}{x-a}+\frac{B}{x-b}$ \\
+$x = x_0 + r cos\varphi$; \hspace{10mm} DON'T FORGOR J~~$\uparrow$ & & \\
+$y = y_0 + r sin\varphi$; $\arrowvert{}J\arrowvert{}=r$ & \\
+
+\hline
+\textbf{Tečná rovina} & & $ln(x*y)=ln(x)+ln(y)$ \\
+
+$\tau:z-z_0=f(x_0,y_0)+f'_x(x_0,y_0)(x-x_0)+$ & & $ln(\frac{x}{y})=ln(x)-ln(y)$ \\
+
+$+ f'_y(x_0,y_0)(y-y_0)$ & & $ln(x^y)=y*ln(x)$ \\
+
+Normály TR & & $e^{ln(x)}=x$ \\
+
+$x=x_0+f'_x(x_0,y_0)*t$ & & $ln(e^x)=x; [l\Leftrightarrow log\downarrow] $\\
+$y=y_0+f'_y(x_0,y_0)*t$ & & $l_b(xy)=l_b(x)+l_b(y)$  \\
+$z=f(x_0,y_0)-t ;~ t ~\epsilon~ \Re$ & & $l_b(\frac{x}{y})=l_b(x)-l_b(y)$ \\
+\hline
+\textbf{Gradient} & & $ln(e^x)=x$ \\
+$grad~ f(x_0,y_0)=(f'_x(x_0,y_0);f'_y(x_0,y_0))$ & \\
+Derivácia f v bode A v smere $\vec{u}$: & \\
+$<grad~f(x,y), \vec{u}>$ & \\
+\hline
+\textbf{Diferenciál vyššieho rádu} & \\
+$d^m f(x_0,y_0)(h,k)=\sum\limits_{j=0}^m \binom{m}{j}\frac{\partial^m f}{\partial^{m-j}_x \partial^j_y}(x_0,y_0) h^{m-j}k^j$ & \\
+\hline
+
+\textbf{Taylorov polynóm} & \\
+$T_n(x,y)=f(x_0,y_0)+\frac{df(x_0,y_0)(h,k)}{1!}+\frac{d^2f(x_0,y_0)(h,k)}{2!}+..$ & \\
+$..+\frac{d^nf(x_0,y_0)(h,k)}{n!}~~~;h=x-x_0;k=y-y_0$ & \\
+ &\\
+\hline
+\textbf{Parciálne derivácie funkcie} & \\
+$F_x=f_uu_x+f_vv_x$ & \\
+$F_y=f_uu_y+f_vv_y$ & \\
+kde $u,v = f(x,y)$ & \\
+\hline
+\textbf{Lokálne extrémy - postup výpočtu} & \textbf{Globálne extrémy - postup výpočtu} & \\
+
+1. Parciálna derivácia 1. rádu $f'_x, f'_y$ & 1. Nakreslím graf, vypočítam lokálne extrémy & \\
+2. Položíme $f'_x=0, f'_y=0$ a hĺadáme riešenie sústavy & 2. Overíme, či sú extrémy v krajných bodoch/priam- & \\
+3. Urč st.b.: $T=[x_0,y_0], f'_x(x_0,y_0)=0,f'_y(x_0,y_0)=0$ & kách/parabolách, ktoré ohraničujú dané teleso: & \\
+4. Parciálne der. 2. rádu $f''_{xx},f''_{yy},f''_{xy}$ & -dosaď rovnicu do $f(x,y)$,túto g(x) zderivuj & \\
+D(T)=
+$
+\begin{vmatrix}
+f''_{xx}(T) & f''_{xy}(T) \\
+f''_{yx}(T) & f''_{yy}(T) \\
+\end{vmatrix}
+$ & Polož g'(x)=0$\rightarrow$extrém? zisti dosadením väčš,menš. hod.& \\
+5. Spočítame pre každý stac.b. &  & \\
+$D(T)=f''_{xx}(T)f''_{yy}(T)-[f''_{xy}(T)]^2$ & \\
+6. Urč, či je v bode T extrém (prípadne typ-max/min) & \\
+a)$D(T)=0 \Rightarrow$ nevieme & \\
+b)$D(T)<0 \Rightarrow$ f v T nemá extrém & \\
+c)$D(T)>0 \Rightarrow$ f v T má extrém & \\
+A)$f''_{xx}(T)>0 \rightarrow$ lok. min. & \\
+B)$f''_{xx}(T)<0 \rightarrow$ lok. max. & \\
+\hline
+\textbf{Fubiniova veta} & \\
+-a,b určujeme na osi x, na osi y sú f(x): & alebo c,d určujeme na osi y, na osi x sú g(x): & \\
+$\int\limits_a^b(\int\limits^{f_1(x)}_{f_2(x)}f(x,y)dy)dx$ & $\int\limits_c^d(\int\limits^{g_1(x)}_{g_2(x)}g(x,y)dx)dy$ & \\
+
+\end{tabular}
+\clearpage
+\end{document}
